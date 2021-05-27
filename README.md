@@ -20,7 +20,9 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
      - Introduction to Logic Synthesis
    - Labs using Yosys and SKY130 PDKs
 ### 1. ASIC Design Flow / RTL TO GDS Flow
-  **Specification** is the first step in the design. Specification are the requirements or the features that the chip must possess. i.e., in terms of the functionality means what logic or function it must perform? how much area it must consume? and with what clock frequency it must operate?
+![asic flow](https://user-images.githubusercontent.com/84923955/119888907-8fc25300-bf53-11eb-890c-4db9dc60266a.jpg)
+
+**Specification** is the first step in the design. Specification are the requirements or the features that the chip must possess. i.e., in terms of the functionality means what logic or function it must perform? how much area it must consume? and with what clock frequency it must operate?
   
   Now, as per the specifications given from the customer, the top level Engineer designs the **Architecture of the design** in the form of Block Diagram. i.e., what must be the different blocks the design must contain. Like example: ALU, memory unit etc. and its interconnections.
   The cost of the chip is also estimated at this stage and if everything is fine then we proceed it to the **RTL design**.
