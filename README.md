@@ -8,7 +8,8 @@ Yosys and Sky130 PDKs.
 Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ### AGENDA
 1. ASIC Design Flow / RTL TO GDS Flow
-2. Day 1
+2. What is VSD-IAT, YOSYS OPEN SYNTHESIS SUITE, SKY130 TECHNOLOGY, iVerilog SIMULATOR and GTKwave?
+3. Day 1
    - Introduction to Verilog RTL Design and Synthesis
      - Introduction to open-source simulator iverilog
      - Introduction to iverilog design testbench
@@ -94,3 +95,23 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   After the final testing process, the **bug free chip is released in the market finally**.
   
   This completes our **IC Design flow / Asic Design flow / RTL to GDS flow**.
+  
+### 2. What is VSD-IAT, YOSYS OPEN SYNTHESIS SUITE, SKY130 TECHNOLOGY, iVerilog SIMULATOR and GTKwave?
+
+#### VSD-IAT
+  VLSI System Design-Intelligent Assessment Technology is a training platform designed by VLSI system Design which is best suited for the design requirements. It developed         for providing automated & Self-paced Learning experience from IC to device physics.
+
+#### YOSYS OPEN SYNTHESIS SUITE
+  Yosys is the synthesizer tool used for converting the RTL to netlist. It is a free software licensed under ISC License. It processes any Synthesizable Verilog - 2005 design.     It is controlled using synthesis scripts.
+  
+#### SKY130 TECHNOLOGY
+  SKY130 is a 180nm-130nm hybrid technology which was developed by Cypress Semiconductor. SKY130 is available now as a foundary technology through SkyWater technology Foundry.
+  SkyWater Open Source PDK is a Collabration between Google and SkyWater Technology Foundary to provide a Open Source Process Design Kit
+  
+#### iVerilog SIMULATOR
+  Icarus Verilog or iVerilog is an open source simulator tool available for Linux, Windows and Mac OS X which is released under the GNU, General Public License.
+  Iverilog is nothing but the implementation of the verilog hardware description language.
+  
+#### GTKWave
+  GTK is a VCD waveform viewer which is based on the GTK library. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
+   
