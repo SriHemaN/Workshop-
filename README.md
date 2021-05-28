@@ -42,3 +42,55 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   Next is the **Logic Synthesis**. In this stage, the tool converts the **RTL behavioral model code into the structural verilog code which is a Gate level Netlist**.
   
   The tools used for Logic Synthesis are **Design Compiler from Synopsys** and **Genus from Cadence** mostly.
+  
+  The inputs required for the Logic Synthesis are the RTL code, library files and the constraints file.
+  
+  The logic synthesis happens in 3 stages:
+   - **Translate**
+   - **Mapping**
+   - **Optimize**
+  
+  **Translate** means the **tool converts the high level RTL circuit into its corresponding logic gates**.
+  For example, like the FullAdder at Higher level circuit representation is implemented at lower level of representaion using simply the logic gates. However, the functionality   remains the same.
+  
+  Next is the **Technology mapping**, Here the tool maps the logic gates with the required technology that we are designing here i.e., whether in 28nm, 14nm or 1nm etc.
+  
+  Next is to **Optimize**. The **tool does optimization in terms of power, area, timing i.e., to get the best QOR (Quality of results)**.
+  
+  Next is the **Design for test i.e., DFT insertion** is also done at this stage by DFT team.
+  
+  Now, the **Gate level Simulation i.e., Logic verification and testing** is done to check whether it performs the required logic and iterations are made until there are no       errors.
+  
+  The **Output of the logic Synthesis** is the **gate level netlist** and the **SDC contraints file which are given as the input to the physical design**.
+  
+  In **Physical Design or PNR**, the **gate level netlist is converted to the GDS Format**.
+  
+  **GDS** is the **Graphic Database Stream**. It is nothing but a transistor level layout format i.e., the physical representaion of the design which can be manufacturable.
+  
+  The various steps involved in physical design are
+   - The **Design inputs** where all the inputs are read by the tool
+   - **Floorplan**
+   - **Powerplan**
+   - **Placement**
+   - **CTS and Routing** with optimizations in each stage.
+  
+  Thus in physical design, **Gatelevel netlist will be** finally **converted to a GDS transistor level layout will best QOR**.
+  
+  Now, the obtained GDS transistor level layout file is sent for **verification and signoff** where different checks are performed like
+   - **DRC, Design Rule Check**
+   - **ERC, Electrical Rule Check**
+   - **LVS, Layout vs Schematic**
+   - **Timing Analysis**
+   - **Power Analysis**
+   - **Crosstalk Analysis**, etc
+  then iterations or modifications are made until we meet the requirements.
+  
+  The GDS file after verification is sent to the **Foundary**. And this process is called **Tape-Out**.
+  
+  In foundry, the **mask is generated for a design layout and chip is fabricated**.
+  
+  The **Fabricated chip is then packaged to protect from the external damage and again tested for any bugs before releasing into the market**.
+  
+  After the final testing process, the **bug free chip is released in the market finally**.
+  
+  This completes our **IC Design flow / Asic Design flow / RTL to GDS flow**.
