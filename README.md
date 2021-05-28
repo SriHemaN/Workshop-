@@ -99,19 +99,19 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ### 2. What is VSD-IAT, YOSYS OPEN SYNTHESIS SUITE, SKY130 TECHNOLOGY, iVerilog SIMULATOR and GTKwave?
 
 #### VSD-IAT
-  VLSI System Design-Intelligent Assessment Technology is a training platform designed by VLSI system Design which is best suited for the design requirements. It developed         for providing automated & Self-paced Learning experience from IC to device physics.
+  **VLSI System Design-Intelligent Assessment Technology** is a training platform designed by VLSI system Design which is best suited for the design requirements. It developed         for **providing automated & Self-paced Learning experience from IC to device physics**.
 
 #### YOSYS OPEN SYNTHESIS SUITE
-  Yosys is the synthesizer tool used for converting the RTL to netlist. It is a free software licensed under ISC License. It processes any Synthesizable Verilog - 2005 design.     It is controlled using synthesis scripts.
+  **Yosys** is the synthesizer tool used for **converting the RTL to netlist**. It is a free software licensed under **ISC License**. It processes any **Synthesizable Verilog - 2005 design**.     It is controlled using synthesis scripts.
   
 #### SKY130 TECHNOLOGY
-  SKY130 is a 180nm-130nm hybrid technology which was developed by Cypress Semiconductor. SKY130 is available now as a foundary technology through SkyWater technology Foundry.
-  SkyWater Open Source PDK is a Collabration between Google and SkyWater Technology Foundary to provide a Open Source Process Design Kit
+  **SKY130 is a 180nm-130nm hybrid technology** which was developed by Cypress Semiconductor. SKY130 is available now as a **foundry technology** through SKYWater technology Foundry.
+  **SkyWater Open Source PDK** is a Collaboration between Google and SkyWater Technology Foundary to provide a **Open Source Process Design Kit**.
   
 #### iVerilog SIMULATOR
-  Icarus Verilog or iVerilog is an open source simulator tool available for Linux, Windows and Mac OS X which is released under the GNU, General Public License.
-  Iverilog is nothing but the implementation of the verilog hardware description language.
+  **Icarus Verilog or iVerilog** is an open source simulator tool available for Linux, Windows and Mac OS X which is released under the GNU, General Public License.
+  Iverilog is nothing but the **implementation of the verilog hardware description language**.
   
 #### GTKWave
-  GTK is a VCD waveform viewer which is based on the GTK library. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
+  **GTK is a VCD waveform viewer which is based on the GTK library**. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
    
