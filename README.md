@@ -251,6 +251,11 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
       SKY130RTLDesignAndSynthesisWorkshop : It is the github page for the workshop.
       
       my_lib : It contains all library files which are needed.
+               
+               It has two folders namely lib, verilog_model.
+               
+               lib : It contains the standard cell library which will be used for the synthesis.
+        
          
 
 
