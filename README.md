@@ -212,6 +212,43 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
   Consider a design and a test bench written for that design. We know that the Simulator only looks for the changes in the input and then only dumps the changes in the output. So the output of a Simulation is going to be a VCD File where VCD stands for Value Change Dump.
   Now, in order to view the VCD file we use a tool called GTKwave where we will be able to view the waveform output and verify the functionality of the design.
+  
+  **Environment setup for running the Labs**
+  
+  Steps to install git clone and look into the files present
+  
+  step 1 : mkdir VLSISRI
+  
+  step 2 : cd VLSISRI
+  
+  step 3 : mkdir vsdflowsri
+  
+  step 4 : cd vsdflowsri
+  
+  step 5 : git clone https://github.com/kunalg123/vsdflow.git
+  
+  step 6 : cd sky130RTLDesignAndSynthesisWorkshop
+  
+  step 7 : cd my_lib
+  
+  step 8 : cd lib
+  
+  step 9 : cd ..
+  
+  step 10 : cd verilog_model
+  
+  step 11 : cd ..
+  
+  step 12 : cd ..
+  
+  step 13 : cd verilog_files
+  
+      Note : 
+      
+      Cloning : cloning means just making a copy of the repository
+      
+      git : Git is a project management system which keep track of the changes we make from version to version and also facilitates multiple developers to work on a single project.
+         
 
 
 
