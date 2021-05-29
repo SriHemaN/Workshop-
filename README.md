@@ -113,3 +113,5 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 #### GTKWave
   **GTK is a VCD waveform viewer which is based on the GTK library**. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
    
+### 3. Day 1
+   ####  Introduction to Verilog RTL Design and Synthesis
