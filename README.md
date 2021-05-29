@@ -115,6 +115,15 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
    
 3. **Day 1**
    - **Introduction to Verilog RTL Design and Synthesis**
-   
-       - Introduction to Verilog RTL Design and Synthesis
+ 
+   **RTL**
+      **Resgister Transfer Level** is a representation of the digital circuit at the abstract level.
+      Which consists of two elements namely Sequential circuits (flip-Flops) and Combinational circuits(Logic Gates).
+      With the help of these two elements, an RTL designs can implementany circuits.
+      
+      There are two commonly used hardware description language(HDL's):
+      -  **Verilog HDL**
+      -  **VHDL**
+
+   **Design**
         
