@@ -244,10 +244,13 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
       Note : 
       
-      Cloning : cloning means just making a copy of the repository
+      Cloning : cloning means just making a copy of the repository.
       
       git : Git is a project management system which keep track of the changes we make from version to version and also facilitates multiple developers to work on a single project.
-      SKY130RTLDesignAndSynthesisWorkshop : It is the 
+      
+      SKY130RTLDesignAndSynthesisWorkshop : It is the github page for the workshop.
+      
+      my_lib : It contains all library files which are needed.
          
 
 
