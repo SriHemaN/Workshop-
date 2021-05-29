@@ -287,8 +287,84 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   Fig: List of files inside verilog_files continued
   
   ![image](https://user-images.githubusercontent.com/84923955/120074617-4a209a00-c0bb-11eb-895a-84afba586968.png)
+  
+  
+  **HOW TO WORK WITH iVERILOG AND GTKWAVE?**
+  
+  Let us consider the example of a 2x1 MUX.
+  
+  **LOGIC DIAGRAM**
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120076510-7a6c3680-c0c3-11eb-91dd-591f38a8c1c7.png)
 
 
+  **TRUTH TABLE**
+  
+  | Sel | y  |
+  | ----|----|
+  | 0   | i0 |
+  | 1   | i1 |
+  
+  **LOGIC EQUATION**
+  
+      Y = i0 Selbar + i1 Sel
+
+  **CIRCUIT DIAGRAM**
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120077243-0895ec00-c0c7-11eb-937c-72d8d6009106.png)
+  
+  **VERILOG CODE**
+  
+  Command used : vim good_mux.v
+  
+  ```verilog
+  module good_mux (input i0 , input i1 , input sel , output reg y);
+  always @ (*)
+  begin 
+         if(sel)
+                  y <= i1;
+          else
+                  y <= i0;
+   end
+   endmodule
+   ```
+   
+   **TEST BENCH**
+   
+   Command used : vim tb_good_mux.v
+   
+   ```verilog
+  `timescale 1ns / 1ps
+  module tb_good_mux;
+          // Inputs
+          reg i0,i1,sel;
+          // Outputs
+          wire y;
+          
+          // Instatiate the Unit Under Test (UUT)
+          good_mux uut (
+                  .sel(sel),
+                  .i0(i0),
+                  .i1(i1),
+                  .y(y)
+          );
+          
+          initial begin
+          $dumpfile("tb_good_mux.vcd");
+          $dumpvars(0,tb_good_mux);
+          // Initialize Inputs
+          sel = 0;
+          i0 = 0;
+          i1 = 0;
+          #300 $finish;
+          end
+          
+  always #75 sel = ~sel;
+  always #10 i0 = ~i0;
+  always #55 i1 = ~i1;
+  endmodule
+           
+  ```
 
 
 
