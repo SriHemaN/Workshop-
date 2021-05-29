@@ -213,7 +213,7 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   Consider a design and a test bench written for that design. We know that the Simulator only looks for the changes in the input and then only dumps the changes in the output. So the output of a Simulation is going to be a VCD File where VCD stands for Value Change Dump.
   Now, in order to view the VCD file we use a tool called GTKwave where we will be able to view the waveform output and verify the functionality of the design.
   
-  **ENVIRONMENT SETUP FOR RUNNING THE LABS**
+  **ENVIRONMENT SETUP FOR RUNNING THE LAB**
   
   **Steps to install git clone and look into the files present**:
   
