@@ -268,23 +268,23 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
       
       cd .. : This command helps to go back from a folder to the folder before that.
       
-   steps followed to git clone and look into the files present
+   Fig: Steps followed to git clone and look into the files present
    
   ![image](https://user-images.githubusercontent.com/84923955/120074537-f1e99800-c0ba-11eb-95c0-aa06109e4bfd.png)
   
-  files inside my_lib, lib, verilog_model
+  Fig: Files inside my_lib, lib, verilog_model
   
   ![image](https://user-images.githubusercontent.com/84923955/120074576-1e9daf80-c0bb-11eb-9d7d-de06ac1dd480.png)
   
-  Command execution to goinside verilog_files
+  Fig: Command execution to goinside verilog_files
   
   ![image](https://user-images.githubusercontent.com/84923955/120074585-2cebcb80-c0bb-11eb-808e-31d79c1ad19a.png)
   
-  List of files inside verilog_files
+  Fig: List of files inside verilog_files
   
   ![image](https://user-images.githubusercontent.com/84923955/120074602-3c6b1480-c0bb-11eb-92b1-57933750a7f5.png)
   
-  List of files inside verilog_files continued
+  Fig: List of files inside verilog_files continued
   
   ![image](https://user-images.githubusercontent.com/84923955/120074617-4a209a00-c0bb-11eb-895a-84afba586968.png)
 
