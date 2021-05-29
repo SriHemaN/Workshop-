@@ -11,15 +11,13 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 2. What is VSD-IAT, YOSYS OPEN SYNTHESIS SUITE, SKY130 TECHNOLOGY, iVerilog SIMULATOR and GTKwave?
 3. Day 1
    - Introduction to Verilog RTL Design and Synthesis
-     - Introduction to open-source simulator iverilog
-     - Introduction to iverilog design testbench
+     - Introduction to open-source simulator iverilog and iverilog design testbench
    - Labs using iverilog and gtkwave
-     - Introduction to Lab
-     - Introduction to iverilog gtkwave
+     - Introduction to Lab and iverilog gtkwave
    - Introduction to Yosys and Logic synthesis
      - Introduction to Yosys
      - Introduction to Logic Synthesis
-   - Labs using Yosys and SKY130 PDKs
+     - Labs using Yosys and SKY130 PDKs
 ### 1. ASIC Design Flow / RTL TO GDS Flow
 ![asic flow](https://user-images.githubusercontent.com/84923955/119888907-8fc25300-bf53-11eb-890c-4db9dc60266a.jpg)
 
