@@ -227,7 +227,7 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
   **step 5 :** git clone https://github.com/kunalg123/vsdflow.git
   
-  **step 6 :** cd sky130RTLDesignAndSynthesisWorkshop
+  **step 6 :** cd SKY130RTLDesignAndSynthesisWorkshop
   
   **step 7 :** cd my_lib
   
