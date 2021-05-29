@@ -365,9 +365,12 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   endmodule
            
   ```
+  
+  #### INTRODUCTION TO YOSYS
+  **SYNTHESIZER**
 
-
-
+  Synthesizer is the tool used for converting the RTL to netlist
+  Yosys is the Synthesizer tool
       
         
          
