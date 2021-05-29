@@ -113,15 +113,13 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 #### GTKWave
   **GTK is a VCD waveform viewer which is based on the GTK library**. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
    
-3. **Day 1**
-   - **Introduction to Verilog RTL Design and Synthesis**
- 
+### 3. DAY 1
+   #### INTRODUCTION TO VERILOG RTL AND DESIGN
    **RTL**
-      **Resgister Transfer Level** is a representation of the digital circuit at the abstract level.
-      Which consists of two elements namely Sequential circuits (flip-Flops) and Combinational circuits(Logic Gates).
-      With the help of these two elements, an RTL designs can implementany circuits.
+   
+   **Register Transfer Level** is a representation of the digital circuit at the abstract level Which consists of two elements namely Sequential circuits (flip-Flops) and  Combinational circuits(Logic Gates). With the help of these two elements, an RTL designs can implementany circuits.
       
-      There are two commonly used hardware description language(HDL's):
+   There are two commonly used hardware description language(HDL's):
       -  **Verilog HDL**
       -  **VHDL**
 
