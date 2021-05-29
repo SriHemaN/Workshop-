@@ -400,6 +400,13 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
   Yosys is the Synthesizer tool
   
+  **LEVELS OF ABSTRACTION**
+  
+  **Fig: Different levels of abstraction and synthesis**
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120082719-23c22500-c0e2-11eb-9a1b-73365eba33e2.png)
+
+  
   **SYNTHESIZER FLOW**
   
   ![image](https://user-images.githubusercontent.com/84923955/120079145-392e5380-c0d0-11eb-8d4e-bd27c230cd1a.png)
@@ -427,8 +434,73 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
          - We can use the same test bench which we had used during RTL simulation.
          - The set of primary inputs or primary outputs will remain same between the RTL design and the synthesized Netlist i.e., Same TestBench can be used!!
 
+  #### INTRODUCTION TO SYNTHESIS
+  **SYNTHESIS**
   
+  Synthesis is the transformation of an idea into a manufacturable device to carry out an intended function.
   
+  Now, consider the RTL code below:
+  
+  ```verilog
+  module sample_code(
+  input clk, rst,
+  output result, done);
+  
+  always@(posedge clk, posedge rst)
+  if(rst)
+  ...
+  else
+  ...
+  endmodule
+  ..................
+  ..................
+  ```
+  
+  I want a digital circuit looking like this:
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120083400-1f980680-c0e6-11eb-9d11-21476108d547.png)
+
+I don't want a code. I want a hardware circuit. **How do I map these two?**
+
+**Answer comes in the form of SYNTHESIS!**
+
+**LOGIC SYNTHESIS**
+
+Logic Synthesis is defined as the process of transforming the RTL code into a gate-level netlist.
+
+**WHAT HAPPENS IN THE SYNTHESIS?**
+
+- Performs gate level translation.
+
+- Design is converted into gates and connections are made between the gates.
+
+- The file what we write out finally is a gate-level netlist.
+
+**WHAT IS .lib?**
+
+.lib is the collection of logic modules which includes basic logic gates such as AND, OR, NOT, etc. 
+
+It also contains different flavours of the same gate.
+
+Like, 
+
+      2 - input AND gate
+      Versions:
+      - slow
+      - medium
+      - fast
+     3 - input AND gate
+     Versions:
+     - slow
+     - medium
+     - fast
+     4 - input AND gate
+     Versions:
+     - slow
+     - medium
+     - fast
+
+
       
         
          
