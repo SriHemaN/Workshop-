@@ -94,7 +94,7 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   
   This completes our **IC Design flow / Asic Design flow / RTL to GDS flow**.
   
-### 2. What is VSD-IAT, YOSYS OPEN SYNTHESIS SUITE, SKY130 TECHNOLOGY, iVerilog SIMULATOR and GTKwave?
+### 2. VSD-IAT, YOSYS OPEN SYNTHESIS SUITE, SKY130 TECHNOLOGY, iVerilog SIMULATOR and GTKwave
 
 #### VSD-IAT
   **VLSI System Design-Intelligent Assessment Technology** is a training platform designed by VLSI system Design which is best suited for the design requirements. It developed         for **providing automated & Self-paced Learning experience from IC to device physics**.
@@ -113,5 +113,8 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 #### GTKWave
   **GTK is a VCD waveform viewer which is based on the GTK library**. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
    
-### 3. Day 1
-   ####  Introduction to Verilog RTL Design and Synthesis
+3. **Day 1**
+   - **Introduction to Verilog RTL Design and Synthesis**
+   
+       - Introduction to Verilog RTL Design and Synthesis
+        
