@@ -114,14 +114,106 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   **GTK is a VCD waveform viewer which is based on the GTK library**. It supports VCD and LXT formats for signal dumps withrespect to iVerilog, it is used to view the simulated       output of the verilog code.
    
 ### 3. DAY 1
-   #### INTRODUCTION TO VERILOG RTL AND DESIGN
-   **RTL**
+  #### INTRODUCTION TO VERILOG RTL DESIGN AND SYNTHESIS
+  **RTL**
    
-   **Register Transfer Level** is a representation of the digital circuit at the abstract level Which consists of two elements namely Sequential circuits (flip-Flops) and  Combinational circuits(Logic Gates). With the help of these two elements, an RTL designs can implementany circuits.
+  **Register Transfer Level** is a representation of the digital circuit at the abstract level which consists of two elements namely Sequential circuits (flip-Flops) and  Combinational circuits(Logic Gates). With the help of these two elements, an RTL designs can implementany circuits.
       
-   There are two commonly used hardware description language(HDL's):
-      -  **Verilog HDL**
-      -  **VHDL**
+  There are two commonly used hardware description language(HDL's):
+  -  **Verilog HDL**
+  -  **VHDL**
 
-   **Design**
-        
+  **VERILOG HDL**
+  
+  Verilog HDL is a standardized IEEE 1364 hardware description language which is a textual format used to model the electronic systems and is commonly used in the RTL level of abstraction to design and verify the digital circuits.
+  
+  **DESIGN**
+  
+  Design is the actual Verilog code or set of Verilog codes which has the intended functionality to meet with the required specifications.
+  
+  Example : Verilog design for 2-input MUX
+  
+  ```verilog
+  module good_mux (input i0 , input i1 , input sel , output reg y);
+  always @ (*)
+  begin 
+         if(sel)
+                  y <= i1;
+          else
+                  y <= i0;
+   end
+   endmodule
+   ```
+   
+  **TEST BENCH**
+  
+  Test Bench is the setup to apply stimulus i.e., test_vectors to the design to check its functionality.
+  
+  Example : TestBench for the design 2:1 MUX
+  
+  ```verilog
+  `timescale 1ns / 1ps
+  module tb_good_mux;
+          // Inputs
+          reg i0,i1,sel;
+          // Outputs
+          wire y;
+          
+          // Instatiate the Unit Under Test (UUT)
+          good_mux uut (
+                  .sel(sel),
+                  .i0(i0),
+                  .i1(i1),
+                  .y(y)
+          );
+          
+          initial begin
+          $dumpfile("tb_good_mux.vcd");
+          $dumpvars(0,tb_good_mux);
+          // Initialize Inputs
+          sel = 0;
+          i0 = 0;
+          i1 = 0;
+          #300 $finish;
+          end
+          
+  always #75 sel = ~sel;
+  always #10 i0 = ~i0;
+  always #55 i1 = ~i1;
+  endmodule
+           
+  ```
+  
+  **SETUP OF A DESIGN AND TEST BENCH**
+  
+![image](https://user-images.githubusercontent.com/84923955/120069510-ec348800-c0a3-11eb-8227-d3c5d9a2e83d.png)
+
+Consider a design having a set of primary inputs which can be one or many. Now, to all these primary inputs, stimulus has to be generated and for all the primary outputs, need to observe the stimulus. So there is a Stimulus Generator and a Stimulus Observer. The design will be initiated in the testbench and then there will be a mechanism to apply Stimulus to the design.
+
+    Note:
+      -  Design may have one or more primary inputs, one or more primary outputs.
+      -  Test Bench does not have a primary input or primary output.
+      
+  **SIMULATOR**
+  
+  Simulator is the tool used for simulating the design.
+  
+  RTL Design is checked for adherence to the spec by simulating the design.
+  
+  The tool used for simulating is iVerilog.
+  
+  **HOW SIMULATOR WORKS?**
+  - Simulator looks for the changes on the input Signals.
+  - If there is no change in the input, the simulator is not going to evaluate the output.
+  
+  **SIMULATION FLOW**
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120071888-c791dd80-c0ae-11eb-9ea4-e4b7f4a23a81.png)
+  
+  Consider a design and a test bench written for that design. We know that the Simulator only looks for the changes in the input and then only dumps the changes in the output. So the output of a Simulation is going to be a VCD File where VCD stands for Value Change Dump.
+  Now, in order to view the VCD file we use a tool called GTKwave where we will be able to view the waveform output and verify the functionality of the design.
+
+
+
+
+  
