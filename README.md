@@ -255,6 +255,39 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
                It has two folders namely lib, verilog_model.
                
                lib : It contains the standard cell library which will be used for the synthesis.
+               
+               verilog_model : This contains all the standard cell verilog models of the standard cells which are present in the lib.
+     
+      Verilog_files : It is a folder containing all the lab experiments. It contains all the verilog source files, test bench files and so on.
+      
+      mkdir : make directory i.e., creates a folder.
+      
+      ls : lists all the files in the directory.
+      
+      cd : This command is to go to a directory.
+      
+      cd .. : This command helps to go back from a folder to the folder before that.
+      
+      
+  ![image](https://user-images.githubusercontent.com/84923955/120074537-f1e99800-c0ba-11eb-95c0-aa06109e4bfd.png)
+  
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120074576-1e9daf80-c0bb-11eb-9d7d-de06ac1dd480.png)
+  
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120074585-2cebcb80-c0bb-11eb-808e-31d79c1ad19a.png)
+  
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120074602-3c6b1480-c0bb-11eb-92b1-57933750a7f5.png)
+  
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120074617-4a209a00-c0bb-11eb-895a-84afba586968.png)
+
+
+
+
+
+      
         
          
 
