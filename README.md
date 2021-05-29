@@ -366,6 +366,33 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
            
   ```
   
+   - We go to our design folder verilog_files which contains all our design files.
+            
+   ```verilog
+   cd verilog_files
+   ```
+            
+   - Load the design in iVerilog.
+   
+   ```verilog
+   iverilog good_mux.v tb_good_mux.v
+   ```
+            
+   Where, good_mux is the design name
+          tb_good_mux is the test bench name
+                   
+   - Dump the file.
+   
+   ```verilog
+   ./a.out
+   ```
+            
+   - Load the VCD file into the GTKwave form viewer.
+
+   ```verilog
+   gtkwave tb_good_mux.vcd
+   ```
+  
   #### INTRODUCTION TO YOSYS
   **SYNTHESIZER**
 
