@@ -375,7 +375,7 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
   **SYNTHESIZER FLOW**
   
-  ![image](https://user-images.githubusercontent.com/84923955/120078198-db980800-c0cb-11eb-9f12-985b7d5f21fe.png)
+  ![image](https://user-images.githubusercontent.com/84923955/120079145-392e5380-c0d0-11eb-8d4e-bd27c230cd1a.png)
   
   Consider we have a design and a .lib which we will be applying to Yosys and we get netlist from the Yosys
   
@@ -385,7 +385,20 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
   **YOSYS SETUP FLOW COMMANDS**
   
-   - read_verilog : It is used to read the design
+   - read_verilog : It is used to read the design.
+   - lib : It is used to read the library .lib.
+   - write_verilog : It is used to write out the netlist.
+  
+  **HOW TO VERIFY THE SYNTHESIS?**
+  
+  ![image](https://user-images.githubusercontent.com/84923955/120079668-a04d0780-c0d2-11eb-8fbc-86a225a3c587.png)
+  
+  Lets see, I have a netlist and my testbench we apply both to the simulator. The output we get from the simulator is the VCD output file. We load VCD file to the GTKwave to observ the stimulus.
+  
+      Note :
+         - The stimulus obtained during synthesis simulation should be same as the output observed during RTL simulation.
+         - We can use the same test bench which we had used during RTL simulation.
+         - The set of primary inputs or primary outputs will remain same between the RTL design and the synthesized Netlist i.e., Same TestBench can be used!!
 
   
   
