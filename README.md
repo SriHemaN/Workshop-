@@ -12,8 +12,7 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 3. Day 1
    - Introduction to Verilog RTL Design and Synthesis
      - Introduction to open-source simulator iverilog and iverilog design testbench
-   - Labs using iverilog and gtkwave
-     - Introduction to Lab and iverilog gtkwave
+     - Labs using iverilog and gtkwave
    - Introduction to Yosys and Logic synthesis
      - Introduction to Yosys
      - Introduction to Logic Synthesis
@@ -248,7 +247,7 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
       Cloning : cloning means just making a copy of the repository
       
       git : Git is a project management system which keep track of the changes we make from version to version and also facilitates multiple developers to work on a single project.
-      sky130RTLDesignAndSynthesisWorkshop : It is the 
+      SKY130RTLDesignAndSynthesisWorkshop : It is the 
          
 
 
