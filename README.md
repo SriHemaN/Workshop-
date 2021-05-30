@@ -616,8 +616,31 @@ The setup and hold timing relations for the data at input of second flop can be 
 
 ![image](https://user-images.githubusercontent.com/84923955/120098280-9ec32400-c152-11eb-891c-6060e90966c5.png)
 
+When we look at the figures above, the data launched from launching flop is allowed to arrive at the input of the second flop only after a delay greater than its hold so that it 
+is properly captured. Similarly, it must not have a delay which is greater than (clock period – setup requirement of second flop). In other words, setup check equation is given 
+as(assuming zero skew between launch and capture clocks):
 
+                                Tck->q + Tprop + Tsetup < Tperiod
+ 
+ Similarly, hold check equation is given as:
+ 
+                                Tck->q  + Tprop > Thold
 
+If we consider there is a skew between the two clocks, then the above equations are modified accordingly. If Tskew is the skew between launch and capture flops, (equal to 
+latency of clock at capture flop minus latency of clock at launch flop so that skew is positive if capture flop has larger latency and vice-versa), above equations are modified 
+as below:
+                    
+                               Tck->q + Tprop + Tsetup - Tskew < Tperiod
+                               
+                               Tck->q  + Tprop > Thold + Tskew
+**Note:**
+
+**CLOCK SKEW:** Clock skew between the two flip-flops represents the difference in arrival times of clock signal at the respective clock pins. If there is a timing path being 
+formed between the two flip-flops, then we can attribute a sign to the clock skew. 
+
+Clock skew is given as:
+
+                               Clock skew = (Arrival time at capture clock pin) - (Arrival time at launch clock pin)
 
 
   
