@@ -887,6 +887,61 @@ simulating the cell under variety of condition performed on cell.
 **TEMPERATURE :** Semiconductors are very sensitive to temperature. As it has to work efficiently at all irrespective of regions, the various that occus has to be factorised.
 
 
+**LABS FOR INTRODUCTION TO TIMING .lib
 
-  
+ Getting into the library file
+ 
+      Command used : vim ../my_lib/lib/SKY130_fd_sc_hd__tt_025C_1v80.lib
+      
+**Fig: Shows the library file SKY130_fd_sc_hd__tt_025C_1v80.lib**
+
+![image](https://user-images.githubusercontent.com/84923955/120113793-c1c4f680-c199-11eb-9a9f-3d3366010ccc.png)
+
+Switching off the syntax color red
+
+      Command used : syn off
+      
+**Fig: Shows the removed syntax colour red**
+
+![image](https://user-images.githubusercontent.com/84923955/120113944-752deb00-c19a-11eb-8ff6-bd035af5fe00.png)
+
+Enabling the line numbers
+
+      Command used : :se nu
+      
+**Fig: Shows the line numbers applied**
+
+![image](https://user-images.githubusercontent.com/84923955/120114049-f71e1400-c19a-11eb-85dc-aed5a8faab4b.png)
+
+**Fig: Shows the Technology, Delaymodel i.e., Look up table, Unit information**
+
+![image](https://user-images.githubusercontent.com/84923955/120114227-c094c900-c19b-11eb-9ac1-16139bf3eb04.png)
+
+**Fig: Shows Cell information for the cell a21110_1 and Leakage power information associated with this cell**
+
+![image](https://user-images.githubusercontent.com/84923955/120114406-b2937800-c19c-11eb-82a0-21e6ee3d8378.png)
+
+**Fig: Shows the Area information, Power port information, Cell leakage power, cell footprint**
+
+![image](https://user-images.githubusercontent.com/84923955/120114564-511fd900-c19d-11eb-867d-bdb6fa9b6b9b.png)
+
+**Fig: Shows Timing information like Cell Rise, Cell Fall**
+
+![image](https://user-images.githubusercontent.com/84923955/120114636-b673ca00-c19d-11eb-9071-031f949b842b.png)
+
+**Fig: Shows the Operating conditions, Voltage, Process, Temperature, Tree type**
+
+![image](https://user-images.githubusercontent.com/84923955/120114720-241ff600-c19e-11eb-9874-aa1476c567a6.png)
+
+**Fig: Shows Pin information and associated Pin Capacitance, Direction of input, Fall Capacitance, Internal Power wrt Rise power, Fall Power, Max Transition, Rise Capacitance**
+
+![image](https://user-images.githubusercontent.com/84923955/120114885-de176200-c19e-11eb-93c6-43d57a72ef1e.png)
+
+**Fig: Shows Power lookup table**
+
+![image](https://user-images.githubusercontent.com/84923955/120114944-2afb3880-c19f-11eb-889a-2941a99f75dd.png)
+
+
+
+
   
