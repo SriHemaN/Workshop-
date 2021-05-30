@@ -669,6 +669,19 @@ necessary to have setup and hold requirements met for all the flip-flops in the 
 
 I want my circuit to work fast but it should not be too fast also i.e., it should be optimally fast. That means, we need some cells to work slowly also. This becomes the contradictory requirement. Hence, we need ceels that work fast to meet the required performance and we need cells that work slow to meet Hold and this collection is what is present in .lib.
 
+**FASTERCELLS Vs SLOWER CELLS**
+
+- Whenever we look at the faster cell and the slower cell in a digital logic circuit, we look at the **load** which is actually a **capacitor**.
+
+- Now, faster the charging and discharging of a capacitance, lesser will be the cell delay.
+
+- In order to charge/discharge the capacitance fast, we need transistors which are capable of sourcing more current i.e, it is a wide transistor as the current carrying of a transistor is the function of its width.
+
+- So **wider the transistors, lower will be the delay but results in more area and more power**.
+
+- **Narrow Transistors will have more delay but less area and less powe**r.
+
+- So **fastercells don't come always free. they come at the penalty of area and power**.
 
 
 
