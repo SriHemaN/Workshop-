@@ -484,7 +484,7 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
   
   I want a digital circuit looking like this:
   
-  ![image](https://user-images.githubusercontent.com/84923955/120083400-1f980680-c0e6-11eb-9d11-21476108d547.png)
+  ![image](https://user-images.githubusercontent.com/84923955/120098793-7be63f00-c155-11eb-85eb-ade1bb16eaac.png)
 
 I don't want a code. I want a hardware circuit. **How do I map these two?**
 
@@ -532,7 +532,7 @@ A Clock signal determines when data is stored in flipflops.
 
 **CLOCK PERIOD**
 
-![image](https://user-images.githubusercontent.com/84923955/120093969-3ae13100-c13b-11eb-94a1-98e407f88f38.png)
+![image](https://user-images.githubusercontent.com/84923955/120098519-f9a94b00-c153-11eb-83eb-3d08a724e8c3.png)
 
 The amount of time between rising clock edges is called the clock period.
 
@@ -591,14 +591,14 @@ and holdtime plays an important role in Timing analysis of our design.
 
 Lets take an example of D-Flipflop to illustrate the origin of Setup and Hold time.
 
-![image](https://user-images.githubusercontent.com/84923955/120096004-c2806d00-c146-11eb-8f46-e6d3dfcec8a3.png)
+![image](https://user-images.githubusercontent.com/84923955/120098435-928b9680-c153-11eb-968f-84950d85c3f0.png)
 
 Now, the D-type flip-flop is realized using two D-type latches; one of them is positive level-sensitive, and the other is negative level-sensitive. A D-type latch, in turn, is
 realized using transmission gates and inverters. 
 
 The Figure below shows a positive-level sensitive D-type latch. Now by inverting the transmission gates clock, we get the negative-level sensitive D-type latch.
 
-![image](https://user-images.githubusercontent.com/84923955/120096222-cf519080-c147-11eb-9660-daefa5d363cd.png)
+![image](https://user-images.githubusercontent.com/84923955/120098368-20b34d00-c153-11eb-9792-52cc0c42a777.png)
 
 Now, let us get into the details of the above figure.In order for the data to be latched by ‘latch 1’ at the falling edge of the clock, it must be present at ‘Node F’ at that 
 time. Since, the data has to travel ‘NodeA’ -> ‘Node B’ -> ‘Node C’ -> ‘Node D’ -> ‘Node E’ -> ‘Node F’ to reach ‘Node F’, it should arrive at flip-flop’s input (Node A) at some 
