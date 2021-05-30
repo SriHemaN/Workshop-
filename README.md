@@ -795,6 +795,18 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 
 **Fig: Schematic representation of the realized logic**
 
+![image](https://user-images.githubusercontent.com/84923955/120105787-1788a700-c178-11eb-9585-4cef1c544b2b.png)
+
+
+**MCQ - DAY1**
+
+1. **DESIGN** is the actual Verilog code or set of Verilog codes which has the intended functionality to meet with the required specifications.
+2. Simulator for looks for the change in **INPUT** signals.
+3. Design has **ONE OR MORE** primary inputs and **ONE OR MORE** primary outputs.
+4. Testbench has **NO** primary inputs and **NO** primary outputs.
+5. VCD stands for **VALUE CHANGE DUMP** file format.
+6. Which VCD waveform viewer is used in labs? **GTKwave**
+
 
 
   
