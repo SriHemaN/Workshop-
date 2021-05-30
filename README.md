@@ -4,7 +4,7 @@
 This Workshop works as a training course which covers from the basic to advance. It was a cloud based 5-Day workshop which introduced the concepts such as Introduction to Verilog RTL design and Synthesis, Timing libs, hierarchical vs flat synthesis and efficient flop coding styles, Combinational and sequential optmizations, GLS, blocking vs non-blocking and Synthesis-Simulation mismatch, Optimization in synthesis. I was given the oppurtunity to work on the opensource environment. Labs were performed using 
 Yosys and Sky130 PDKs.
 ### AUTHOR OF THE WORKSHOP
-##### Mr. Kunal Ghosh
+#### Mr. Kunal Ghosh
 Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ### AGENDA
 1. ASIC Design Flow / RTL TO GDS Flow
