@@ -371,7 +371,12 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
    ```verilog
    cd verilog_files
    ```
-            
+   
+   **Fig: Shows going into the verilog_files folder**
+   
+   ![image](https://user-images.githubusercontent.com/84923955/120093364-5e09e180-c137-11eb-87b5-868d6d8dd55a.png)
+
+
    - Load the design in iVerilog.
    
    ```verilog
@@ -380,18 +385,39 @@ Consider a design having a set of primary inputs which can be one or many. Now, 
             
    Where, good_mux is the design name
           tb_good_mux is the test bench name
-                   
+          
+   
+   **Fig: Shows loading good_mux.v and tb_good_mux.v into the simulator**
+   
+   ![image](https://user-images.githubusercontent.com/84923955/120092959-7c221280-c134-11eb-926d-2250db9c1829.png)
+
+   
    - Dump the file.
    
    ```verilog
    ./a.out
    ```
-            
+    
+   
+   **Fig: Shows executing ./a.out and dumping the VCD file**
+   
+   ![image](https://user-images.githubusercontent.com/84923955/120093021-f9e61e00-c134-11eb-94ae-88696e31cc52.png)
+
+
    - Load the VCD file into the GTKwave form viewer.
 
    ```verilog
    gtkwave tb_good_mux.vcd
    ```
+   
+   **Fig: Shows loading the VCD file to gtkwaveform to view waveform output**
+   
+   ![image](https://user-images.githubusercontent.com/84923955/120093685-77139200-c139-11eb-8752-b665c860e422.png)
+
+   **Fig: Shows the gtkwaveform viewer opened to view the functionality of the design**
+   
+   ![image](https://user-images.githubusercontent.com/84923955/120093325-197e4600-c137-11eb-8111-c83af8353844.png)
+
   
   #### INTRODUCTION TO YOSYS
   **SYNTHESIZER**
