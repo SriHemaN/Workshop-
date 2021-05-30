@@ -654,5 +654,23 @@ Clock skew is given as:
 
                                Clock skew = (Arrival time at capture clock pin) - (Arrival time at launch clock pin)
 
+**WHAT IF SETUP AND/OR HOLD VARIATIONS OCCUR IN A DESIGN?**
+
+The setup and hold timings should be met in order to ensure that the data launched from one flop is captured properly at the next flop at next clock edge. 
+
+If the setup check is violated, then the data will not be captured at the next clock edge properly. 
+
+Similarly, if the hold check is violated, then the data which is intended to be captured at the next edge will get captured at the same edge. 
+
+Setup/hold violations can also lead to data changing within setup/hold window of the capturing flip-flop. It may lead to metastability in the design. So, it is very much 
+necessary to have setup and hold requirements met for all the flip-flops in the design and there should not be any setup/hold violation.
+
+**WHY DO WE REQUIRE FAST OR SLOW CELLS?**
+
+I want my circuit to work fast but it should not be too fast also i.e., it should be optimally fast. That means, we need some cells to work slowly also. This becomes the contradictory requirement. Hence, we need ceels that work fast to meet the required performance and we need cells that work slow to meet Hold and this collection is what is present in .lib.
+
+
+
+
 
   
