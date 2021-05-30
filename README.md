@@ -693,6 +693,16 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 
 - So It is required for us to offer guidance to the synthesizer to pick correct set of cells what do we call it as **CONSTRAINTS**.
 
+**CONSTRAINTS**
+
+      Note:
+      
+      - Synthesis is constraint - driven.
+      
+      - The designer guides the synthesis tool by providing constraints, i.e, information about the training and area requirements for the design. 
+        The synthesis tool uses this information and tries to generate the smallest possible design that will satisfy the timing requirements. 
+        Without any constraints specified, the synthesis tool will generate a non-optimal netlist, which might not satisfy the designer's requirements.
+
 
 
 
