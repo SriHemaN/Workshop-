@@ -17,6 +17,17 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
      - Introduction to Yosys
      - Introduction to Logic Synthesis
      - Labs using Yosys and SKY130 PDKs
+4. Day 2
+   - Timing libs, Hierarchical Vs Flat Synthesis and Efficient flop coding styles
+     - Introduction to timing .lib
+     - Lab for Introduction to .lib
+     - Hierarchical Vs Flat synthesis
+     - Lab for Hierarchical and Flat synthesis
+     - Various Flop coding styles and optimisations
+     - Why Flops and Flop coding styles?
+     - Lab for Flop synthesis simulation
+     - Interesting optimisations
+     
 ### 1. ASIC Design Flow / RTL TO GDS Flow
 ![image](https://user-images.githubusercontent.com/84923955/120101940-4e55c180-c166-11eb-826d-27bc8d7caff7.png)
 
@@ -809,4 +820,6 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 
 
 
+### 3. DAY 2
+  #### TIMING LIBS, HIERARCHICAL Vs FLAT SYNTHESIS AND EFFICIENT FLOP CODING STYLES
   
