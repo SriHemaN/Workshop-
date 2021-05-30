@@ -610,11 +610,11 @@ termed as delay taken by the data from ‘Node A’ to ‘Node C’.
 Let us consider a simple circuit which shows flop to flop timing path.
 Let us assume that both the flops are rise edge triggered. 
 
-![image](https://user-images.githubusercontent.com/84923955/120096647-4ee05f00-c14a-11eb-85cd-94c3beb7e71e.png)
+![image](https://user-images.githubusercontent.com/84923955/120098227-40964100-c152-11eb-8acc-5e45ae9dcce8.png)
 
 The setup and hold timing relations for the data at input of second flop can be explained using the waveforms below:
 
-![image](https://user-images.githubusercontent.com/84923955/120097082-3f621580-c14c-11eb-891e-c6198b7e7b72.png)
+![image](https://user-images.githubusercontent.com/84923955/120098280-9ec32400-c152-11eb-891c-6060e90966c5.png)
 
 
 
