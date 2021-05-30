@@ -526,10 +526,96 @@ Like,
      - medium
      - fast
 
+**CLOCK**
 
-      
-        
-         
+A Clock signal determines when data is stored in flipflops.
+
+**CLOCK PERIOD**
+
+![image](https://user-images.githubusercontent.com/84923955/120093969-3ae13100-c13b-11eb-94a1-98e407f88f38.png)
+
+The amount of time between rising clock edges is called the clock period.
+
+It is denoted by **Tclk**.
+
+The circuit performance depends on  
+
+![image](https://user-images.githubusercontent.com/84923955/120094746-deccdb80-c13f-11eb-9f48-1270da60057f.png)
+
+
+So, 
+
+![image](https://user-images.githubusercontent.com/84923955/120094692-8eee1480-c13f-11eb-8b74-89bcf0c2dbd4.png)
+
+The maximum clock frequency indicates that data is being stored more quickly, and the sequential circuit is generating results at a faster rate.
+
+**TIMING PARAMETERS FOR COMBINATIONAL LOGIC**
+
+**PROPAGATION DELAY**
+
+Propagation delay is the amount of time needed for a change in a logic input to result in a permanent change at an output.
+
+It is denoted as  **Tpd**.
+
+**COMBINATIONAL DELAY**
+
+Combinational delay in logic path determines the maximum speed of operation of digital logic circuits.
+
+**Tcombi** is the propagation delay of the combinational circuit.
+
+**CONTAMINATION DELAY**
+
+Contamination delay is the amount of time needed for a change in a logic input to result in an initial change at an output.
+
+It is denoted as **Tcd**.
+
+**TIMING PARAMETERS FOR SEQUENTIAL LOGIC**
+
+**SETUP TIME**
+
+Setup time is the amount of time before the clock edge that the data must be stable.
+
+It is denoted by **Tsetup**.
+
+**HOLD TIME**
+
+Hold time is the amount of time after the clock edge that the data must be held stable.
+
+It is denoted by **Tholdtime**.
+
+**ORIGIN OF SETUP AND HOLD TIME**
+
+In order for the chip to function properly, setup and hold timing constraints need to be met properly for each and every flip-flop in the design. If even a single flop is not
+meeting the setup and hold requirements for the timing paths starting from/ending at it, then the design will fail and meta-stability will occur. In order to overcome this setup
+and holdtime plays an important role in Timing analysis of our design.
+
+Lets take an example of D-Flipflop to illustrate the origin of Setup and Hold time.
+
+![image](https://user-images.githubusercontent.com/84923955/120096004-c2806d00-c146-11eb-8f46-e6d3dfcec8a3.png)
+
+Now, the D-type flip-flop is realized using two D-type latches; one of them is positive level-sensitive, and the other is negative level-sensitive. A D-type latch, in turn, is
+realized using transmission gates and inverters. 
+
+The Figure below shows a positive-level sensitive D-type latch. Now by inverting the transmission gates clock, we get the negative-level sensitive D-type latch.
+
+![image](https://user-images.githubusercontent.com/84923955/120096222-cf519080-c147-11eb-9660-daefa5d363cd.png)
+
+Now, let us get into the details of the above figure.In order for the data to be latched by ‘latch 1’ at the falling edge of the clock, it must be present at ‘Node F’ at that 
+time. Since, the data has to travel ‘NodeA’ -> ‘Node B’ -> ‘Node C’ -> ‘Node D’ -> ‘Node E’ -> ‘Node F’ to reach ‘Node F’, it should arrive at flip-flop’s input (Node A) at some 
+earlier time. This time for data to reach from ‘Node A’ to ‘Node F’ is termed as data setup time (assuming CLK and CLK' are present instantaneously. If that is not the case, it 
+will be accounted for accordingly). Similarly, it is necessary to ensure a stable value at the input to ensure a stable value at ‘Node C’. In other words, hold time can be 
+termed as delay taken by the data from ‘Node A’ to ‘Node C’.
+
+**SETUP AND HOLDTIME CHECKS**
+Let us consider a simple circuit which shows flop to flop timing path.
+Let us assume that both the flops are rise edge triggered. 
+
+![image](https://user-images.githubusercontent.com/84923955/120096647-4ee05f00-c14a-11eb-85cd-94c3beb7e71e.png)
+
+The setup and hold timing relations for the data at input of second flop can be explained using the waveforms below:
+
+![image](https://user-images.githubusercontent.com/84923955/120097082-3f621580-c14c-11eb-891e-c6198b7e7b72.png)
+
 
 
 
