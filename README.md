@@ -704,6 +704,60 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
         Without any constraints specified, the synthesis tool will generate a non-optimal netlist, which might not satisfy the designer's requirements.
 
 
+#### LABS USING YOSYS AND SKY130PDKs
+
+**STEPS TO SYNTHESIZE OUR DESIGN**
+
+Step 1: Invoke yosys
+
+                        yosys
+                        
+Step 2: Read the library
+
+                        read_liberty -lib ../my_lib/lib/SKY130_fd_sc_hd_-tt_025C_1v80.lib
+                        
+                        Where,
+                        
+                        read_liberty : Read cells from liberty file as modules into current design.
+                        
+                        -lib : Only create empty blackbox modules.
+                        
+                        SKY130_fd_sc_hd_-tt_025C_1v80.lib : Name of the library.
+                        
+Step 3: Read the design
+
+                        read_verilog good_mux.v
+                        
+                        Where,
+                        
+                        read_verilog : Load modules from a Verilog file to the current design.
+                        
+                        good_mux.v : verilog filename
+                        
+Step 4: Synthesize the design
+
+                        synth -top good_mux
+                        
+                        Where,
+                        
+                        synth : This command runs the default synthesis script.
+                        
+                        -top :  use the specified module as top module
+                        
+Step 5: Generate the netlist
+
+                        abc -liberty ../my_lib/lib/SKY130_fd_sc_hd_-tt_025C_1v80.lib
+                        
+                        abd : Does technology mapping of yosys's internal gate library to a target architecture.
+                        
+Step 6: Look for the graphical version of logic which has been realized
+
+                        show
+                        
+                        Where,
+                        
+                        show : Generates schematics using graphviz.
+
 
 
   
