@@ -712,7 +712,7 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 
                         yosys
 
-Fig: Invoking yosys
+**Fig: Invoking yosys**
 
 ![image](https://user-images.githubusercontent.com/84923955/120104674-42243100-c173-11eb-89a1-afe783ab9bd6.png)
 
@@ -729,7 +729,7 @@ Fig: Invoking yosys
                         
                         SKY130_fd_sc_hd_-tt_025C_1v80.lib : Name of the library.
  
- Fig: Reading the library
+ **Fig: Reading the library**
  
  ![image](https://user-images.githubusercontent.com/84923955/120104739-9fb87d80-c173-11eb-942a-97151a0a6cbb.png)
 
@@ -744,7 +744,7 @@ Fig: Invoking yosys
                         
                         good_mux.v : verilog filename
 
-Fig: Reading the design
+**Fig: Reading the design**
 
 ![image](https://user-images.githubusercontent.com/84923955/120104803-e908cd00-c173-11eb-88e2-7a6587c5807c.png)
 
@@ -759,11 +759,11 @@ Fig: Reading the design
                         
                         -top :  use the specified module as top module
 
-Fig: Synthesize the design
+**Fig: Synthesize the design**
 
 ![image](https://user-images.githubusercontent.com/84923955/120104872-4735b000-c174-11eb-916e-352c0982f165.png)
 
-Fig: Synth innfers the following below
+**Fig: Synth infers the following below**
 
 ![image](https://user-images.githubusercontent.com/84923955/120105037-fbcfd180-c174-11eb-8978-5ab54c849a61.png)
 
@@ -775,7 +775,16 @@ Fig: Synth innfers the following below
                         Where,
                         
                         abc : Does technology mapping of yosys's internal gate library to a target architecture.
-                        
+
+**Fig: Generating the netlist**
+
+![image](https://user-images.githubusercontent.com/84923955/120105388-4aca3680-c176-11eb-9894-acccacdf294a.png)
+
+**Fig: Doing abc infers**
+
+![image](https://user-images.githubusercontent.com/84923955/120105441-85cc6a00-c176-11eb-95ba-8a65847f0904.png)
+
+
 **Step 6:** Look for the graphical version of logic which has been realized
 
                         show
@@ -783,6 +792,8 @@ Fig: Synth innfers the following below
                         Where,
                         
                         show : Generates schematics using graphviz.
+
+**Fig: Schematic representation of the realized logic**
 
 
 
