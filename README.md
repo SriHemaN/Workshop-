@@ -656,13 +656,13 @@ Clock skew is given as:
 
 **WHAT IF SETUP AND/OR HOLD VARIATIONS OCCUR IN A DESIGN?**
 
-The setup and hold timings should be met in order to ensure that the data launched from one flop is captured properly at the next flop at next clock edge. 
+- The setup and hold timings should be met in order to ensure that the data launched from one flop is captured properly at the next flop at next clock edge. 
 
-If the setup check is violated, then the data will not be captured at the next clock edge properly. 
+- If the setup check is violated, then the data will not be captured at the next clock edge properly. 
 
-Similarly, if the hold check is violated, then the data which is intended to be captured at the next edge will get captured at the same edge. 
+- Similarly, if the hold check is violated, then the data which is intended to be captured at the next edge will get captured at the same edge. 
 
-Setup/hold violations can also lead to data changing within setup/hold window of the capturing flip-flop. It may lead to metastability in the design. So, it is very much 
+- Setup/hold violations can also lead to data changing within setup/hold window of the capturing flip-flop. It may lead to metastability in the design. So, it is very much 
 necessary to have setup and hold requirements met for all the flip-flops in the design and there should not be any setup/hold violation.
 
 **WHY DO WE REQUIRE FAST OR SLOW CELLS?**
@@ -682,6 +682,16 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 - **Narrow Transistors will have more delay but less area and less powe**r.
 
 - So **fastercells don't come always free. they come at the penalty of area and power**.
+
+**HOW TO SELECT THE CELLS?**
+
+- We need to guide the synthesizer to select the flavour of cells that is optimum for the implementation of logic circuits.
+
+- More use of faster cells results in bad circuit in terms of area and power and potentially may result in hold time violations.
+
+- More use of slower cells may result in a sluggist circuit and may not meet the performance.
+
+- So It is required for us to offer guidance to the synthesizer to pick correct set of cells what do we call it as **CONSTRAINTS**.
 
 
 
