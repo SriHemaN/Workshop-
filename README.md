@@ -943,5 +943,29 @@ Enabling the line numbers
 
 
 
+### ACKNOWLEDGEMENT
 
-  
+I wish to acknowledge the help provided by Mr.Kunal Ghosh, Mr. Shon Taware for clearing my doubts and helping me understand the concepts. 
+I also wish to show my appreciation to the entire team for giving us this efficient workshop. I also thank Ms. AnaghaGhosh, Mr. Tapan Das, Mr. Mukesh for the kind support.
+
+### REFERENCES
+
+https://www.vlsisystemdesign.com/?v=a98eef2a3105
+
+https://vsdiat.com/
+
+http://smdpc2sd.gov.in/downloads/IEP/IEP%208/24-02-18%20Rejender%20pratap.pdf
+
+https://vlsiuniverse.blogspot.com/2013/06/setup-and-hold-basics-of-timing-analysis.html
+
+http://www.ecs.umass.edu/ece/tessier/courses/221/lecture/timing-notes.pdf
+
+http://home.iitj.ac.in/~sptiwari/DLD/Lecture31_32_DLD.pdf
+
+https://robo-tronix.weebly.com/uploads/2/3/2/1/23219916/veriloghdlsamirpalnitkar.pdf
+
+https://www.physicaldesign4u.com/2020/07/pvt-process-voltage-temperature.html
+
+http://www.clifford.at/yosys/documentation.html
+
+
