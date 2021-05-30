@@ -809,17 +809,84 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 ![image](https://user-images.githubusercontent.com/84923955/120105787-1788a700-c178-11eb-9585-4cef1c544b2b.png)
 
 
-**MCQ - DAY1**
-
-1. **DESIGN** is the actual Verilog code or set of Verilog codes which has the intended functionality to meet with the required specifications.
-2. Simulator for looks for the change in **INPUT** signals.
-3. Design has **ONE OR MORE** primary inputs and **ONE OR MORE** primary outputs.
-4. Testbench has **NO** primary inputs and **NO** primary outputs.
-5. VCD stands for **VALUE CHANGE DUMP** file format.
-6. Which VCD waveform viewer is used in labs? **GTKwave**
-
-
-
 ### 3. DAY 2
   #### TIMING LIBS, HIERARCHICAL Vs FLAT SYNTHESIS AND EFFICIENT FLOP CODING STYLES
+  
+  **INTRODUCTION TO TIMING .lib
+  
+  **Library Name : SKY130_fd_sc_hd__tt_025C_1v80.lib** is a **High Density Standard Cell Library**
+  
+         SKY130_fd_sc_hd__tt_025C_1v80.lib
+         
+         Where,
+         
+         SKY130 : Technology
+         
+         tt : Typical Process
+         
+         025C : Temperature
+         
+         1v80 : Voltage
+         
+         SKY130_fd_sc_hd : It is designed for High Density. It contains standard cells that are smaller, utilizing a 0.46 x 2.72um site, equivalent to 9 met1 tracks. This 
+                           library enables higher routed gated density, lower dynamic power consumption, and comparable timing and leakage power. As a trade-off it has lower                                drive strength and does not support any drop in replacement medium or high speed library.
+                           sky130_fd_sc_hd includes clock-gating cells to reduce active power during non-sleep modes.
+
+                           - Latches and flip-flops have scan equivalents to enable scan chain creation.
+
+                           - Multi-voltage domain library cells are provided.
+
+                           - Routed Gate Density is 160 kGates/mm^2 or better.
+
+                           - leakage @ttleak_1.80v_25C (no body bias) is 0.86 nA / kGate
+
+                           - sky130_fd_sc_XX__buf_16 max cap (ss_1.60v_-40C, in/out tran=1.5ns) is 0.746 pF
+
+                           - Body Bias-able
+
+**.lib - LOGIC LIBRARY**
+
+.lib file contains the following :
+
+a. Timing information of Standard cells, Soft macros, Hard macros.
+
+b. Functionality information of Standard cells, Soft macros.
+
+c. Design rules like max transition, max capacitance and max fanout.
+
+d. Timing information Cell delays, Setup, Hold time are present.
+
+e. Cell delay is Function of input transition and output load.
+
+f. Cell delay is calculated based on lookup tables.
+
+h. Cell delays are calculated by using linear delay models, nonlinear delay models and CCS
+   models.
+   
+i. functionality is used for Optimization Purpose.
+
+j. And also it Contain Power information.
+
+k. It also contain some PVT condition and derating factor which will provide from foundry
+   only.
+
+Actually Logical library file (.lib) is in ASCII format, which contain the Timing and Power parameter of Standard cell and Macros. These parameter are obtained from
+simulating the cell under variety of condition performed on cell.
+
+
+**SOURCES OF VARIATION**
+
+- PROCESS VARIATION (P)
+- SUPPLY VOLTAGE (V)
+- OPERATING TEMPERATURE (T)
+
+**PROCESS VARIATION :** This variation accounts for deviations in the semiconductor fabrication process.
+
+**SUPPLY VOLTAGE :** As we are going to the lower nodes the supply voltage for a chip is also going to less. Let’s say the chip is operating at 1.2V. So, there are chances that                      at certain instances of time this voltage may vary. It can go to 1.5V or 0.8V. To take care of this scenario, we consider voltage variation.
+
+**TEMPERATURE :** Semiconductors are very sensitive to temperature. As it has to work efficiently at all irrespective of regions, the various that occus has to be factorised.
+
+
+
+  
   
