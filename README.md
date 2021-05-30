@@ -621,10 +621,21 @@ is properly captured. Similarly, it must not have a delay which is greater than 
 as(assuming zero skew between launch and capture clocks):
 
                                 Tck->q + Tprop + Tsetup < Tperiod
+                                
+                                where Tck->q is the propagation delay of flop A
+                                
+                                      Tprop is the Tcombi which is the propagation delay of combinational circuit
+                                      
+                                      Tsetup is the setup time
+                                      
+                                      Tperiod is the period of the clock
+                                      
  
  Similarly, hold check equation is given as:
  
                                 Tck->q  + Tprop > Thold
+                                
+                                where Thold is the hold time
 
 If we consider there is a skew between the two clocks, then the above equations are modified accordingly. If Tskew is the skew between launch and capture flops, (equal to 
 latency of clock at capture flop minus latency of clock at launch flop so that skew is positive if capture flop has larger latency and vice-versa), above equations are modified 
@@ -633,7 +644,8 @@ as below:
                                Tck->q + Tprop + Tsetup - Tskew < Tperiod
                                
                                Tck->q  + Tprop > Thold + Tskew
-**Note:**
+                               
+                               where Tskew is the clock skew
 
 **CLOCK SKEW:** Clock skew between the two flip-flops represents the difference in arrival times of clock signal at the respective clock pins. If there is a timing path being 
 formed between the two flip-flops, then we can attribute a sign to the clock skew. 
