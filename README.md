@@ -711,7 +711,12 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
 **Step 1:** Invoke yosys
 
                         yosys
-                        
+
+Fig: Invoking yosys
+
+![image](https://user-images.githubusercontent.com/84923955/120104674-42243100-c173-11eb-89a1-afe783ab9bd6.png)
+
+
 **Step 2:** Read the library
 
                         read_liberty -lib ../my_lib/lib/SKY130_fd_sc_hd_-tt_025C_1v80.lib
@@ -723,7 +728,12 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
                         -lib : Only create empty blackbox modules.
                         
                         SKY130_fd_sc_hd_-tt_025C_1v80.lib : Name of the library.
-                        
+ 
+ Fig: Reading the library
+ 
+ ![image](https://user-images.githubusercontent.com/84923955/120104739-9fb87d80-c173-11eb-942a-97151a0a6cbb.png)
+
+
 **Step 3:** Read the design
 
                         read_verilog good_mux.v
@@ -733,7 +743,12 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
                         read_verilog : Load modules from a Verilog file to the current design.
                         
                         good_mux.v : verilog filename
-                        
+
+Fig: Reading the design
+
+![image](https://user-images.githubusercontent.com/84923955/120104803-e908cd00-c173-11eb-88e2-7a6587c5807c.png)
+
+
 **Step 4:** Synthesize the design
 
                         synth -top good_mux
@@ -743,7 +758,16 @@ I want my circuit to work fast but it should not be too fast also i.e., it shoul
                         synth : This command runs the default synthesis script.
                         
                         -top :  use the specified module as top module
-                        
+
+Fig: Synthesize the design
+
+![image](https://user-images.githubusercontent.com/84923955/120104872-4735b000-c174-11eb-916e-352c0982f165.png)
+
+Fig: Synth innfers the following below
+
+![image](https://user-images.githubusercontent.com/84923955/120105037-fbcfd180-c174-11eb-8978-5ab54c849a61.png)
+
+
 **Step 5:** Generate the netlist
 
                         abc -liberty ../my_lib/lib/SKY130_fd_sc_hd_-tt_025C_1v80.lib
